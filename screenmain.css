@@ -1,0 +1,237 @@
+body, h1, h2, p, ul, li, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #f4f4f4, #f4f4f4);
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#ff6600;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-left: 20px;
+}
+
+header .logo {
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-link {
+    background: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s, color 0.3s;
+}
+
+.profile-link:hover {
+    background:#ff3300;
+    color: #fff;
+}
+
+.profile-link.active {
+    background: #ff3300;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    background: #ff8c00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav button {
+    background: transparent;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav button:hover {
+    background: #ff9900;
+    color: #fff;
+}
+
+nav button.active {
+    background: #ff3300;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #ff6600;
+}
+
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.status {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+#redeem-points-1{
+    display: inline-block;
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s;
+    margin-right: 10px;
+}
+
+#redeem-points-1:hover {
+    background: #ff9900;
+}
+
+
+.Leaderboard {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    align-items: right;
+    background: rgb(255, 119, 0);
+    margin-right: 10px;
+    border-radius: 5px; 
+}
+
+.badge {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.badge img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+form input {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    transition: border 0.3s;
+}
+
+form input:focus {
+    border: 1px solid #ff6600;
+}
+
+form button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #ff9900;
+}
