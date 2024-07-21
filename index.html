@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Gamified Screen</title>
+    <link rel="stylesheet" href="screenmain.css">
+</head>
+<body>
+    <header style="display: flex; align-items: left;">
+        <img src="NEW LOGO.png" alt="Image description" style="width: 120px; height: 120px;"margin-right: 10px;">
+        <h1>SWIGGY</h1>
+        <div class="header-right">
+            <img src="profilepicture.jpg" alt="Profile Picture" class="profile-pic">
+            <button class="tablink profile-link" onclick="openScreen(event, 'profileScreen')">Profile</button>
+        </div>
+        
+      </header>
+    <nav>
+        <button class="tablink" onclick="openScreen(event, 'mainScreen')">Home</button>
+        <button class="tablink" onclick="openScreen(event, 'progressScreen')">Challenge Progress</button>
+    </nav>
+    <main id="mainScreen" class="tabcontent">
+        <div class="row">
+            <section id="daily-challenges">
+                <h2>Daily Challenges</h2>
+                <ul>
+                    <li>Order 2 meals today - <span class="status">Incomplete ❌</span></li>
+                    <li>Rate 3 restaurants - <span class="status">Incomplete ❌</li>
+                    <li>Invite a friend - <span class="status">Complete ✅</li>
+                </ul>
+            </section>
+            <section id="reward-points">
+                <h2>Reward Points</h2>
+                <p>Total Points: <span id="points">0</span></p>
+                <button id="redeem-points-1">Redeem Points</button>
+            </section>
+        </div>
+        <div class="row">
+            <section id="Leaderboard">
+                <h2>Leaderboard</h2>
+                <ol>
+                    <li>User1 - 3000 points        <div class="Leaderboard" style="width: 40%;"></div></li>
+                    <li>User2 - 5000 points        <div class="Leaderboard" style="width: 60%;"></div></li>
+                    <li>User3 - 1800 points        <div class="Leaderboard" style="width: 30%;"></div></li>
+                    <li>User3 - 1200 points        <div class="Leaderboard" style="width: 20%;"></div></li>
+                    <li>User3 - 1500 points        <div class="Leaderboard" style="width: 25%;"></div></li>
+                    <li>User3 - 1000 points        <div class="Leaderboard" style="width: 10%;"></div></li>
+                </ol>
+                
+            </section>
+            <section id="badges">
+                <h2>Badges</h2>
+                <div class="badge">
+                    <img src="Badges.png" alt="Foodie Badge">
+                    <span>FOODIE</span>
+                </div>
+                <div class="badge">
+                    <img src="Badges.png" alt="Super Chef Badge">
+                    <span>EXPLORER</span>
+                </div>
+                <div class="badge">
+                    <img src="Badges.png" alt="Top Reviewer Badge">
+                    <span>TOP REVIEWER</span>
+                </div>
+                <div class="badge">
+                    <img src="Badges.png" alt="Foodie Badge">
+                    <span>MIDNIGHT MUNCHER</span>
+                </div>
+                <div class="badge">
+                    <img src="Badges.png" alt="Foodie Badge">
+                    <span>BAE OF BIRYANI</span>
+                </div>
+                <div class="badge">
+                    <img src="Badges.png" alt="Foodie Badge">
+                    <span>FOODBALLER</span>
+                </div>
+            </section>
+            
+            </section>
+            
+        </div>
+    </main>
+    <main id="progressScreen" class="tabcontent" style="display:none;">
+        <section id="challenge-progress">
+            <h2>Challenge Progress</h2>
+            <ol>
+                <li>
+                    Order 2 meals today: 1/2 ❌
+                    <div class="challenge-images">
+                        <img src="meal1.png" alt="Meal 2" class="challenge-img">
+                    </div>
+                </li>
+                <li>
+                    Rate 3 restaurants: 2/3 ❌
+                    <div class="challenge-images">
+                        <img src="restaurant1.png" alt="Restaurant 1" class="challenge-img">
+                        <img src="restaurant2.png" alt="Restaurant 3" class="challenge-img">
+                    </div>
+                </li>
+                <li>
+                    Invite a friend (REFERRAL CODE: #ghbs23hj1zz): Completed ✅
+                </li>
+            </ol>
+            <h1>Complete daily challenges to earn more points and badges!</h1>
+        </section>
+        
+    </main>
+    <main id="profileScreen" class="tabcontent" style="display:none;">
+        <section id="user-profile">
+            <h2>User Profile</h2>
+            <form id="profile-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                <br>
+                <button type="submit">Update Profile</button>
+            </form>
+        </section>
+    </main>
+    <script src="screen main.js"></script>
+</body>
+</html>
